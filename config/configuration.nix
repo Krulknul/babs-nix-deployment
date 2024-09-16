@@ -2,6 +2,7 @@
   config,
   pkgs,
   modulesPath,
+  nixpkgs-unstable,
   ...
 }:
 {
@@ -11,7 +12,10 @@
     ./grafana.nix
     ./babylon-node.nix
     ./secrets.nix
+    "${nixpkgs-unstable}/nixos/modules/services/monitoring/alloy.nix"
   ];
+
+  networking.hostName = "nixos";
 
   # Install a few useful packages (see https://search.nixos.org/packages for more)
   environment.systemPackages = with pkgs; [

@@ -1,6 +1,6 @@
 keys:
   - &master age1kl7dag3tcsdglk93jhnue5eya2ctght0m432fgqq76qd6vr86euq84ecyx
-  - &host1 age1u29wuvajsz7m67062d2f0ta6awa4qc0ezmnrjqprelnw5kuauscsh3xxat
+  - &host1 age1nxm8y6dfl8vmak7du0nfm0r5ev4sspvla8d4zven6e733vphseaq79ws3r
 creation_rules:
   - path_regex: ^secrets/.*
     key_groups:
